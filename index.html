@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferretería Paulino Alba - Tu tienda de herramientas y materiales de construcción de confianza.">
+    <title>Ferretería Paulino Alba | Herramientas y Materiales</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== TOP HEADER BAR ====================  -->
+    <div class="top-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="top-header-info">
+                        <span><i class="fas fa-phone"></i> Llámanos: <strong>+1 809 825 5555</strong></span>
+                        <span class="ms-4"><i class="fas fa-clock"></i>Lunes a Viernes: 7:00 AM - 6:30 PM Sabados: 7:00 AM - 5:00 PM Domingos: 8:00 AM - 12:00 PM</span>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <a href="#sucursales" class="top-header-link">Sucursales</a>
+                    <a href="#" class="top-header-link ms-3">Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MAIN HEADER ====================  -->
+    <header class="main-header">
+        <div class="container-fluid">
+            <div class="row align-items-center py-3">
+                <!-- Logo Ferreteria Paulino Alba -->
+                <div class="col-lg-2 col-md-3 col-6 mb-3 mb-md-0">
+                    <div class="logo-container">
+                        <img src="assets/ferreteria paulino alba logo.jpg" alt="Ferretería Paulino Alba Logo" class="logo-image">
+                        <div class="logo-text">
+                            <span class="logo-brand">Ferretería</span>
+                            <span class="logo-name">Paulino Alba</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="col-lg-7 col-md-6 mb-3 mb-md-0">
+                    <div class="search-bar">
+                        <input type="text" class="form-control" placeholder="Busca productos, herramientas, materiales..." id="mainSearchInput" autocomplete="off">
+                        <button class="btn-search" id="mainSearchBtn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div id="searchResults" class="search-results" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <!-- Right Icons -->
+                <div class="col-lg-3 col-md-3 col-6">
+                    <div class="header-icons d-flex justify-content-end gap-3">
+                        <!-- Mi Cuenta eliminado - solicitado -->
+                        <a href="#" class="icon-link" title="Carrito de Compras" id="cartToggle">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge badge-cart">0</span>
+                            <span class="d-none d-sm-inline">Carrito</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== NAVIGATION BAR ====================  -->
+    <nav class="navbar-main">
+        <div class="container-fluid">
+            <div class="nav-scroll">
+                <ul class="nav-menu">
+                    <li><a href="#cat-construccion" class="nav-link active">Construcción</a></li>
+                    <li><a href="#cat-plomeria" class="nav-link">Plomería</a></li>
+                    <li><a href="#cat-electricidad" class="nav-link">Electricidad</a></li>
+                    <li><a href="#cat-herramientas" class="nav-link">Herramientas</a></li>
+                    <li><a href="#cat-pinturas" class="nav-link">Pinturas</a></li>
+                    <li><a href="#cat-iluminacion" class="nav-link">Iluminación</a></li>
+                    <li><a href="#cat-seguridad" class="nav-link">Seguridad</a></li>
+                    <li><a href="#cat-sanitarios" class="nav-link">Sanitarios</a></li>
+                    <li><a href="#cat-ofertas" class="nav-link">Ofertas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION (SLIDER) ====================  -->
+    <section class="hero-section">
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #1e5ba8 0%, #2a7bc9 100%);">
+                        <div class="hero-content">
+                            <h1>¡Ofertas Especiales en Herramientas!</h1>
+                            <p>Descuentos de hasta el 40% en herramientas premium</p>
+                            <button class="btn btn-yellow">Ver Ofertas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #d4a018 0%, #f4c430 100%);">
+                        <div class="hero-content">
+                            <h1>Materiales de Construcción</h1>
+                            <p>Los mejores materiales para tus proyectos</p>
+                            <button class="btn btn-primary">Explorar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background: linear-gradient(135deg, #c41e3a 0%, #e74c3c 100%);">
+                        <div class="hero-content">
+                            <h1>Nuevas Colecciones 2025</h1>
+                            <p>Productos innovadores para tu hogar y obra</p>
+                            <button class="btn btn-light">Descubrir Más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORÍAS DESTACADAS ====================  -->
+    <section class="categorias-section">
+        <div class="container">
+            <h2 class="section-title">Categorías Principales</h2>
+            <div class="row g-4">
+                <!-- Categoría 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="categoria-card">
+                        <div class="categoria-image">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Herramientas</h3>
+                        <p>Todo lo que necesitas para trabajar</p>
+                        <a href="#" class="btn-categoria">Ver Más →</a>
+                    </div>
+                </div>
+
+                <!-- Categoría 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="categoria-card">
+                        <div class="categoria-image">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Plomería</h3>
+                        <p>Tuberías, grifos y accesorios</p>
+                        <a href="#" class="btn-categoria">Ver Más →</a>
+                    </div>
+                </div>
+
+                <!-- Categoría 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="categoria-card">
+                        <div class="categoria-image">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Electricidad</h3>
+                        <p>Cables, interruptores y más</p>
+                        <a href="#" class="btn-categoria">Ver Más →</a>
+                    </div>
+                </div>
+
+                <!-- Categoría 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="categoria-card">
+                        <div class="categoria-image">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Pinturas</h3>
+                        <p>Pintura, barniz y accesorios</p>
+                        <a href="#" class="btn-categoria">Ver Más →</a>
+                    </div>
+                </div>
+
+                <!-- Categoría 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="categoria-card">
+                        <div class="categoria-image">
+                            <i class="fas fa-bricks"></i>
+                        </div>
+                        <h3>Construcción</h3>
+                        <p>Materiales y equipos</p>
+                        <a href="#" class="btn-categoria">Ver Más →</a>
+                    </div>
+                </div>
+
+                <!-- Categoría 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="categoria-card">
+                        <div class="categoria-image">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Seguridad</h3>
+                        <p>Equipo de protección personal</p>
+                        <a href="#" class="btn-categoria">Ver Más →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROMOCIÓN ====================  -->
+    <section class="promotion-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>Ofertas del Mes</h3>
+                    <p>Disfruta de descuentos especiales en productos seleccionados. Solo este mes.</p>
+                    <button class="btn btn-primary">Ver Promociones</button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="promo-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRODUCTOS DESTACADOS ====================  -->
+    <section class="productos-section">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="row g-4">
+                <!-- Producto 1 -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/taladro profesional.webp" alt="Taladro">
+                            <span class="badge-descuento">-20%</span>
+                        </div>
+                        <h4>Taladro Profesional</h4>
+                        <p class="product-price"><strong>$89.99</strong> <span class="old-price">$112.99</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/sierra.jpg" alt="Sierra">
+                            <span class="badge-descuento">-15%</span>
+                        </div>
+                        <h4>Sierra Circular</h4>
+                        <p class="product-price"><strong>$64.99</strong> <span class="old-price">$76.99</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/martillo profesional.jpg" alt="Martillo">
+                            <span class="badge-descuento">-10%</span>
+                        </div>
+                        <h4>Martillo Profesional</h4>
+                        <p class="product-price"><strong>$24.99</strong> <span class="old-price">$27.99</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assets/kit.jpg" alt="Destornillador">
+                            <span class="badge-descuento">-25%</span>
+                        </div>
+                        <h4>Kit Destornilladores</h4>
+                        <p class="product-price"><strong>$19.99</strong> <span class="old-price">$26.99</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">Ver Todos los Productos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATÁLOGO DE PRODUCTOS ====================  -->
+    
+    <!-- CATEGORÍA: CONSTRUCCIÓN -->
+    <section id="cat-construccion" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Construcción</h2>
+                <p class="catalogo-subtitle">Todos los materiales que necesitas para tus proyectos</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="https://www.cementoscibao.com/wp-content/uploads/2024/11/cpm27-cibao-1024x725.png" alt="Cemento">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Cemento Cibao 42.5kg</h4>
+                        <p class="catalogo-brand">Cementos Cibao</p>
+                        <p class="catalogo-price">RD$ 500</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0432/5851/1512/products/arenam3_1200x1200_crop_center.jpg?v=1638401432" alt="Arena">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Arena para Construcción</h4>
+                        <p class="catalogo-brand">Ferreteria Paulino Alba</p>
+                        <p class="catalogo-price">RD$ 350 el M</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="https://www.blockkhoury.com/khoury/wp-content/uploads/2019/08/Khoury_Segunda_Alta_011-1024x1024.jpg" alt="Bloques">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Block de Concreto 8x8</h4>
+                        <p class="catalogo-brand">Block 8x8</p>
+                        <p class="catalogo-price">RD$ 50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.ETbFdKPQ3huR-NkZEaqTxAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Acero">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Varilla de Acero de 1/2</h4>
+                        <p class="catalogo-brand">SiderPro</p>
+                        <p class="catalogo-price">RD$ 400</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_818145-MLC54762414113_032023-O.webp" alt="Cal">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Arena Fina</h4>
+                        <p class="catalogo-brand">Ferreteri Paulino Alba</p>
+                        <p class="catalogo-price">RD$ 250 el M</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: PLOMERÍA -->
+    <section id="cat-plomeria" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Plomería</h2>
+                <p class="catalogo-subtitle">Tuberías, accesorios y todo lo necesario</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/3.jpg" alt="Tubería PVC">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Lav-238 negro mate mármoleado 38x13cm</h4>
+                        <p class="catalogo-brand">PVC Plus</p>
+                        <p class="catalogo-price">RD$ 89.50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/b9ad3cf4-397a-4014-8eed-03459210c943.jpg" alt="Grifo">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Pluma VIQUA</h4>
+                        <p class="catalogo-brand">KromFaucet</p>
+                        <p class="catalogo-price">RD$ 450.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/6.jpg" alt="Codos">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">juego de ducha bisman</h4>
+                        <p class="catalogo-brand">PVC Plus</p>
+                        <p class="catalogo-price">RD$ 28.75</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/5.jpg" alt="Válvula">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">El artículo en la imagen es una ducha (cabezal de regadera) de la marca Clemo</h4>
+                        <p class="catalogo-brand">HydroControl</p>
+                        <p class="catalogo-price">RD$ 125.99</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/8.jpg" alt="Adaptador">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">desagüe push metálico Griven Basic</h4>
+                        <p class="catalogo-brand">PVC Plus</p>
+                        <p class="catalogo-price">RD$ 45.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: ELECTRICIDAD -->
+    <section id="cat-electricidad" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Electricidad</h2>
+                <p class="catalogo-subtitle">Cables, interruptores y componentes eléctricos</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/alambre 14 100.webp" alt="Cable">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Cable Eléctrico #14 x 100m</h4>
+                        <p class="catalogo-brand">ElectroCables</p>
+                        <p class="catalogo-price">RD$ 650.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Interruptor Simple Blanco.webp" alt="Interruptor">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Interruptor Simple Blanco</h4>
+                        <p class="catalogo-brand">ElectroMax</p>
+                        <p class="catalogo-price">RD$ 35.99</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Enchufe Doble Blanco.png" alt="Enchufe">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Enchufe Doble Blanco</h4>
+                        <p class="catalogo-brand">ElectroMax</p>
+                        <p class="catalogo-price">RD$ 42.50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Breaker 30A Monofásico.webp" alt="Breaker">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Breaker 30A Monofásico</h4>
+                        <p class="catalogo-brand">SafeElectric</p>
+                        <p class="catalogo-price">RD$ 125.75</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Bombilla LED 12W E27.jpg" alt="Bombilla">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Bombilla LED 12W E27</h4>
+                        <p class="catalogo-brand">LUMINa</p>
+                        <p class="catalogo-price">RD$ 89.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: HERRAMIENTAS -->
+    <section id="cat-herramientas" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Herramientas</h2>
+                <p class="catalogo-subtitle">Herramientas profesionales de calidad garantizada</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/motocierra.webp" alt="Taladro">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">MOTOSIERRA 18" 46CC A GASOLINA DYLLU</h4>
+                        <p class="catalogo-brand">DeWALT</p>
+                        <p class="catalogo-price">RD$ 2,450.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/download (1).jpg" alt="Martillo">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Sierra ingletadora Dyllu de 1400W</h4>
+                        <p class="catalogo-brand">Stanley</p>
+                        <p class="catalogo-price">RD$ 185.50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Martillo mecanico Dyllu.jpg" alt="Destornillador">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Martillo mecanico Dyllu</h4>
+                        <p class="catalogo-brand">Bosch</p>
+                        <p class="catalogo-price">RD$ 245.75</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/CINTA METRICA 25mm X 5Mts.jpg" alt="Sierra">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Cinta mecanica Dyllu de 3m</h4>
+                        <p class="catalogo-brand">Makita</p>
+                        <p class="catalogo-price">RD$ 1,890.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/download (2).jpg" alt="Llave">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Martillo demoledor industrial total  de 1300w</h4>
+                        <p class="catalogo-brand">Craftsman</p>
+                        <p class="catalogo-price">RD$ 350.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: PINTURAS -->
+    <section id="cat-pinturas" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Pinturas</h2>
+                <p class="catalogo-subtitle">Pinturas y acabados de alta calidad</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Pintura Acrílica 5 galones.avif" alt="Pintura Acrílica">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Pintura Acrílica 5 galones</h4>
+                        <p class="catalogo-brand">Sherwin-Williams</p>
+                        <p class="catalogo-price">RD$ 1,250.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Pintura pupular acrilica.png" alt="Pintura pupular acrilica">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Pintura pupular acrilica</h4>
+                        <p class="catalogo-brand">Benjamin Moore</p>
+                        <p class="catalogo-price">RD$ 450.50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Imprimación Acrílica 1L.png" alt="Pintura tucan">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Pintura tucan</h4>
+                        <p class="catalogo-brand">Rust-Oleum</p>
+                        <p class="catalogo-price">RD$ 320.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Pintura tropical acrilica.webp" alt="pintura tropical">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">pintura tropical acrilica<h4>
+                        <p class="catalogo-brand">ChemCoat</p>
+                        <p class="catalogo-price">RD$ 125.75</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/pintura king acrilica.webp" alt="Brocha">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Juego de brochas Dyllu</h4>
+                        <p class="catalogo-brand">Purdy</p>
+                        <p class="catalogo-price">RD$ 285.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: ILUMINACIÓN -->
+    <section id="cat-iluminacion" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Iluminación</h2>
+                <p class="catalogo-subtitle">Luminarias y sistemas de iluminación</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/lampara colgable.jpg" alt="Lámpara">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Lámpara Colgante Led 24W</h4>
+                        <p class="catalogo-brand">LUMINa</p>
+                        <p class="catalogo-price">RD$ 850.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/aplique de pared.jpg" alt="Aplique">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Aplique de Pared Cromado</h4>
+                        <p class="catalogo-brand">Philips</p>
+                        <p class="catalogo-price">RD$ 450.75</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/reflectorled.jpg" alt="Reflector">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Reflector Led 50W</h4>
+                        <p class="catalogo-brand">OSRAM</p>
+                        <p class="catalogo-price">RD$ 1,200.50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/tubofluorecente.jpg" alt="Tubo">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Tubo Fluorescente T8 40W</h4>
+                        <p class="catalogo-brand">Sylvania</p>
+                        <p class="catalogo-price">RD$ 125.99</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/lamparadicroica.jpg" alt="Dicroica">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Dicroica Led 7W GU10</h4>
+                        <p class="catalogo-brand">Ledvance</p>
+                        <p class="catalogo-price">RD$ 85.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: SEGURIDAD -->
+    <section id="cat-seguridad" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Seguridad</h2>
+                <p class="catalogo-subtitle">Equipo de protección personal y seguridad</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Casco de Seguridad Amarillo.jpg" alt="Casco">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Casco de Seguridad Amarillo</h4>
+                        <p class="catalogo-brand">SafetyPro</p>
+                        <p class="catalogo-price">RD$ 225.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Guantes de Nitrilo Pack 100.webp" alt="Guantes">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Guantes de goma</h4>
+                        <p class="catalogo-brand">ProtecMax</p>
+                        <p class="catalogo-price">RD$ 165.50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Gafas de Seguridad Transparente.webp" alt="Gafas">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Gafas de Seguridad Transparente</h4>
+                        <p class="catalogo-brand">VisionSafe</p>
+                        <p class="catalogo-price">RD$ 85.75</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Mascarilla N95 Pack 50.webp" alt="Mascarilla">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Mascarilla N95 Pack 50</h4>
+                        <p class="catalogo-brand">FilterSafe</p>
+                        <p class="catalogo-price">RD$ 225.99</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/Botas de goma.png" alt="Botas">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Botas de goma</h4>
+                        <p class="catalogo-brand">ProteqWear</p>
+                        <p class="catalogo-price">RD$ 850.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: SANITARIOS -->
+    <section id="cat-sanitarios" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Sanitarios</h2>
+                <p class="catalogo-subtitle">Artefactos sanitarios y accesorios</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/inodoroblanco.webp" alt="Inodoro">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Inodoro Blanco de Cerámica</h4>
+                        <p class="catalogo-brand">Roca</p>
+                        <p class="catalogo-price">RD$ 4,500.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/lavamanos redondo.webp" alt="Lavamanos">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Lavamanos Redondo Blanco</h4>
+                        <p class="catalogo-brand">Ferrum</p>
+                        <p class="catalogo-price">RD$ 1,250.75</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/bañera.jpg" alt="Bañera">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Bañera Acrílica 1.80m</h4>
+                        <p class="catalogo-brand">Jacuzzi</p>
+                        <p class="catalogo-price">RD$ 3,850.50</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/ducha.webp" alt="Ducha">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Ducha de Techo Cromada 20cm</h4>
+                        <p class="catalogo-brand">KromFaucet</p>
+                        <p class="catalogo-price">RD$ 650.99</p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card">
+                    <div class="catalogo-image">
+                        <img src="assets/juegos de accerosorios.jpg" alt="Accesorios">
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Juego Accesorios Baño 5pzs</h4>
+                        <p class="catalogo-brand">BathSet</p>
+                        <p class="catalogo-price">RD$ 285.50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍA: OFERTAS -->
+    <section id="cat-ofertas" class="catalogo-section">
+        <div class="container">
+            <div class="catalogo-header">
+                <h2 class="catalogo-title">Ofertas Especiales</h2>
+                <p class="catalogo-subtitle">Productos con descuentos exclusivos</p>
+            </div>
+            <div class="catalogo-grid">
+                <!-- Producto 1 -->
+                <div class="catalogo-card catalogo-card-oferta">
+                    <div class="catalogo-image catalogo-image-descuento">
+                        <img src="assets/juego de herramientas.jpg" alt="Oferta 1">
+                        <span class="badge-oferta">-40%</span>
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Juego Herramientas 24 piezas</h4>
+                        <p class="catalogo-brand">ToolMaster</p>
+                        <p class="catalogo-price">RD$ 1,299.00 <span class="catalogo-old-price">RD$ 2,165.00</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="catalogo-card catalogo-card-oferta">
+                    <div class="catalogo-image catalogo-image-descuento">
+                        <img src="https://via.placeholder.com/600x700?text=Oferta+2" alt="Oferta 2">
+                        <span class="badge-oferta">-35%</span>
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Pintura 5 galones + Accesorios</h4>
+                        <p class="catalogo-brand">Sherwin-Williams</p>
+                        <p class="catalogo-price">RD$ 1,800.00 <span class="catalogo-old-price">RD$ 2,769.00</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="catalogo-card catalogo-card-oferta">
+                    <div class="catalogo-image catalogo-image-descuento">
+                        <img src="https://via.placeholder.com/600x700?text=Oferta+3" alt="Oferta 3">
+                        <span class="badge-oferta">-30%</span>
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Taladro + Accesorios Profesional</h4>
+                        <p class="catalogo-brand">DeWALT</p>
+                        <p class="catalogo-price">RD$ 2,450.00 <span class="catalogo-old-price">RD$ 3,500.00</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="catalogo-card catalogo-card-oferta">
+                    <div class="catalogo-image catalogo-image-descuento">
+                        <img src="https://via.placeholder.com/600x700?text=Oferta+4" alt="Oferta 4">
+                        <span class="badge-oferta">-25%</span>
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Kit Plomería Completo</h4>
+                        <p class="catalogo-brand">PVC Plus</p>
+                        <p class="catalogo-price">RD$ 750.00 <span class="catalogo-old-price">RD$ 1,000.00</span></p>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="catalogo-card catalogo-card-oferta">
+                    <div class="catalogo-image catalogo-image-descuento">
+                        <img src="https://via.placeholder.com/600x700?text=Oferta+5" alt="Oferta 5">
+                        <span class="badge-oferta">-50%</span>
+                    </div>
+                    <div class="catalogo-info">
+                        <h4 class="catalogo-product-name">Paquete Seguridad Laboral</h4>
+                        <p class="catalogo-brand">SafetyPro</p>
+                        <p class="catalogo-price">RD$ 450.00 <span class="catalogo-old-price">RD$ 900.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SUCURSALES ====================  -->
+    <section id="sucursales" class="sucursales-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Sucursales</h2>
+            <div class="row g-4">
+                <!-- Sucursal 1 - Principal -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="sucursal-card">
+                        <div class="sucursal-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h4>Sucursal Principal</h4>
+                        <p class="sucursal-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Autopista Duarte, Santiago de los Caballeros 51000
+                        </p>
+                        <p class="sucursal-phone">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+18098255555">+1 809 825 5555</a>
+                        </p>
+                        <p class="sucursal-hours">
+                            <i class="fas fa-clock"></i>
+                            <strong>Lunes a Viernes:</strong> 7:00 AM - 6:30 PM<br>
+                            <strong>Sábados:</strong> 7:00 AM - 5:00 PM<br>
+                            <strong>Domingos:</strong> 8:00 AM - 12:00 PM
+                        </p>
+                        <a href="https://www.google.com/maps/place/Ferreter%C3%ADa+Paulino+Alba+SRL/@19.4420491,-70.629988,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgICquo7SVw!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAG0ilSz77F-WoFHjrWEas8a7yptIvRaUS88GwQWCEnRvVLcOEkHY5OmiU0ptM5sXUsdFc74d5gtYpxLOXY9MK4dWF31-J51xzmkBY3oGw7UtyPq2ELKjQufnGmmIFlFEAj2i8_JEITZS%3Dw203-h114-k-no!7i4656!8i2620!4m17!1m7!3m6!1s0x8eb1cffbb68af659:0xed40d685eb259b0!2sFerreter%C3%ADa+Paulino+Alba+SRL!8m2!3d19.4418319!4d-70.6300886!16s%2Fg%2F11bwqpw38q!3m8!1s0x8eb1cffbb68af659:0xed40d685eb259b0!8m2!3d19.4418319!4d-70.6300886!10e5!14m1!1BCgIgAQ!16s%2Fg%2F11bwqpw38q?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D" target="_blank" class="btn btn-primary btn-sm w-100 mt-3">
+                            Ver en Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center mt-4 text-muted">Próximamente más sucursales disponibles...</p>
+        </div>
+    </section>
+
+    <!-- ==================== INFORMACIÓN ====================  -->
+    <section class="info-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="info-box">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h5>Envío Rápido</h5>
+                        <p>Entrega en 24-48 horas</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-box">
+                        <i class="fas fa-lock"></i>
+                        <h5>Pago Seguro</h5>
+                        <p>Transacciones protegidas</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="info-box">
+                        <i class="fas fa-headset"></i>
+                        <h5>Soporte 8/6</h5>
+                        <p>Asistencia al cliente siempre disponible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ====================  -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row mb-5">
+                <!-- Acerca de -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Acerca de Nosotros</h5>
+                    <p>Ferretería Paulino Alba es tu tienda de confianza desde hace más de 20 años, comprometida con la calidad y el servicio.</p>
+                </div>
+
+                <!-- Categorías -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Categorías</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Herramientas</a></li>
+                        <li><a href="#">Construcción</a></li>
+                        <li><a href="#">Plomería</a></li>
+                        <li><a href="#">Electricidad</a></li>
+                        <li><a href="#">Pinturas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Ayuda -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Ayuda</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Política de Devoluciones</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contáctanos</h5>
+                    <p><i class="fas fa-phone"></i> +1 809 825 5555
+                    
+                    </p>
+                    <p><i class="fas fa-envelope"></i> info@paulinoalba.com</p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.instagram.com/ferreteriapaulinoalba/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea separadora -->
+            <hr class="my-4">
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center py-3">
+                    <p>&copy; 2025 Ferretería Paulino Alba. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL DE CANTIDAD ====================  -->
+    <div class="quantity-modal" id="quantityModal">
+        <div class="quantity-modal-content">
+            <button class="quantity-modal-close" id="closeQuantityModal">&times;</button>
+            <h3>Cantidad</h3>
+            <p class="product-modal-name" id="modalProductName"></p>
+            <p class="product-modal-price" id="modalProductPrice"></p>
+            <div class="quantity-selector">
+                <button class="qty-btn" id="qtyDecrement">-</button>
+                <input type="number" class="qty-input" id="qtyInput" value="1" min="1">
+                <button class="qty-btn" id="qtyIncrement">+</button>
+            </div>
+            <button class="btn btn-primary w-100 mt-3" id="confirmAddCart">Agregar al Carrito</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>
